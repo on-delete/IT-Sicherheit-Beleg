@@ -1,0 +1,9 @@
+#only .tex should be synced
+*.aux
+*.bbl
+*.out
+*.synctex.gz
+*.toc
+*.log
+*.blg
+*.pdf
