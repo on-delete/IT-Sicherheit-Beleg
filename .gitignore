@@ -6,6 +6,7 @@
 *.toc
 *.log
 *.blg
+*.tcp
 hauptdatei.pdf
 
 /workspace
