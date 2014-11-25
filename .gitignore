@@ -7,3 +7,5 @@
 *.log
 *.blg
 *.pdf
+
+/workspace
