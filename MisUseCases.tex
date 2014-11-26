@@ -1,4 +1,4 @@
-\section{MisUse Cases}
+\section{Misuse Cases}
 
 Use Cases spielen nicht nur bei der Softwareentwicklng eine bedeutende Rolle beim requirements engineering. Es ist jedoch in der UML 2 Spezifikation nicht möglich Sicherheitsanalysen mit Use Cases durchzuführen \cite{sindre2005eliciting}. 
 In \cite{sindre2005eliciting} wird eine Erweiterung von Use Cases vorgestellt, die es auch ermöglicht Missbrauch darzustellen. Während Use Cases etwas von Wert für den Systembesitzer und Stakeholder schaffen, stellen Misuse Cases einen Schaden am System und Werten dar.
@@ -146,22 +146,93 @@ Name: & Missbrauch von Außendienstmitarbeiterhardware \\
 \hline 
 Summary: & Ein Angreifer versucht über die Hardware von Außendienstmitarbeitern Zugang auf Firmendaten zu erlangen.\\
 \hline
-Basic path: & bp-1. Der Angreifer versucht Malware auf die ungesicherte Hardware zu schleusen. Dazu nutzt er ein ungesichertes und unbeaufsichtigtes Gerät.\\
- & bp-2. Der angreifer stielt ein ungesichertes und unbeaufsichtigtes Gerät um später Zugriff auf die Daten zu erhalten.\\ 
+Basic path: & \textbf{bp-1.} Der Angreifer versucht Malware auf die ungesicherte Hardware zu schleusen. Dazu nutzt er ein ungesichertes und unbeaufsichtigtes Gerät.\\
+ & \textbf{bp-2.} Der angreifer stielt ein ungesichertes und unbeaufsichtigtes Gerät um später Zugriff auf die Daten zu erhalten.\\ 
 \hline 
-Mitigation points: & mp1. Sicherheitsrichtlinen für Geräte, wie z.B. Verschlüsselung, Automatische Sperrung bei Inaktivität, Virenschutz, Verbot von eigenen Geräten, etc. können den Angriff erschweren oder unmöglich machen. Sollte der ANgreifer nur die Hardware stehlen wollen und nichts mit den Firmendaten anfangen können,so bleibt der Verlust relativ gering, solange Backups existieren.\\ 
+Mitigation points: & \textbf{mp1.} Sicherheitsrichtlinen für Geräte, wie z.B. Verschlüsselung, Automatische Sperrung bei Inaktivität, Virenschutz, Verbot von eigenen Geräten, etc. können den Angriff erschweren oder unmöglich machen. Sollte der Angreifer nur die Hardware stehlen wollen und nichts mit den Firmendaten anfangen können,so bleibt der Verlust relativ gering, solange Backups existieren.\\ 
 \hline 
 Trigger: & Der Außendienstmitarbeiter lässt seinen Laptop oder ein anderes Gerät mit Firmendaten für kurze Zeit unbeaufsichtigt. Dies erleichtert den Angriff nur. Ein Diebstahl ist immer möglich.\\ 
 \hline 
 Preconditions: & Der Außendienstmitarbeiter speichert Firmendaten auf unsicherer Hardware.\\ 
 \hline 
-Mitigation guarantee: & Der Angreifer kann keine Malware einschleusen, da der Rechner gesperrt und/oder passwortgesichert ist (bp-1). Der Angreifer kann mit gestohlener Hardware nichts anfangen, da alle Daten verschlüsselt sind (bp-2).\\ 
+Mitigation guarantee: & Der Angreifer kann keine Malware einschleusen, da der Rechner gesperrt und/oder passwortgesichert ist (\textbf{bp-1}). Der Angreifer kann mit gestohlener Hardware nichts anfangen, da alle Daten verschlüsselt sind (\textbf{bp-2}).\\ 
 \hline 
 Misuser profile: & Der Angreifer ist ein Mitarbeiter der Konkurrenz, Industriespion oder jemand, der nur die Hardware möchte. \\ 
 \hline 
 Scope: & Kompletter Betrieb \\ 
 \hline 
 Stakeholders and risks: & Sollten wichtige Forschungs- oder Produktionsdaten gestohlen und an die Konkurrenz verkauft werden, so können schwere Verluste für das Unternehmen entstehen. \\ 
+\hline 
+\end{tabular} 
+\end{table}
+
+\begin{table}
+\scriptsize
+\centering
+\caption{Misuse Case für ein Einbruchsszenario}
+\label{tab:MisuseCaseEinbruch}
+\begin{tabular}{p{0.2\textwidth}p{0.8\textwidth}}
+\hline 
+Name & Einbruch \\ 
+\hline 
+Summary & Ein Angreifer versucht in das Firmengebäude einzudringen.\\
+\hline
+Basic path: & \textbf{bp-1.} Der Einbrecher betritt das Firmengelände/Firmengebäude und erhält Zugang zu kritischen Bereichen/Informationen und Wertgegenständen. \\ 
+\hline 
+Mitigation points: & \textbf{mp-1.} Ein Zaun verhindert/erschwert Zugang zum Firmengelände. \\ 
+& \textbf{mp-2.} Videoüberwachung kann helfen einen Täter zu fassen und macht das Gebäude als Ziel unattraktiver.\\
+& \textbf{mp-3.} Regelmäßige Kontrolle des Inventars hilft fehlende Wertgegenstände zu erfassen.\\
+& \textbf{mp-4.} Unterschiedliche Schlüssel für verschiedene Sicherheitsbereiche verhindern das Eindringen mit einem gefundenen/gestohlenen Schlüssel.\\
+& \textbf{mp-5.} Sicherheitstüren/-Fenster erschweren das Eindringen.\\
+& \textbf{mp-6.} Schulungen für Mitarbeiter helfen auf Sicherheitsmaßnahmen hinzuweisen.\\
+& \textbf{mp-7.} Überwachung der Mitarbeiter kann Fehlverhalten aufdecken.\\
+\hline 
+Trigger: & \textbf{tr-1.} Auftreten ist immer möglich. \\ 
+\hline 
+Preconditions: & \textbf{pc-1.} Freier Zugang auf das Firmengelände \\ 
+& \textbf{pc-2.} Sichtbar fehlende Überwachung.\\
+& \textbf{pc-3.} Inventar wird nicht überprüft.\\
+& \textbf{pc-4.} Generalschlüssel für alle Mitarbeiter.\\
+& \textbf{pc-5.} Ungesicherte Türen/Fenster.\\
+& \textbf{pc-6.} Mitarbeiter schalten Sicherheitsmaßnahmen aus.\\
+\hline 
+Mitigation guarantee: & Der Einbrecher ist durch Sicherheitsmaßnahmen nicht in der Lage das Gebäude zu betreten und/oder wird beim Einbruch aufgezeichnet und ist damit zurückverfolgbar.\\ 
+\hline 
+Related business rules: & Das Auftreten eines Einbruchs kann die Firma je nach gestohlenem Gut leicht bis sehr schwer treffen. Die Schädigung von Firmenwerten ist immer zu erwarten.\\ 
+\hline 
+Misuser profile: & Der Einbrecher kann ein Industriespion sein oder jemand, der es nur auf Hardware oderähnliche materielle Werte abgesehen hat. \\ 
+\hline 
+Scope: & Gesamter Betrieb \\
+\hline 
+Stakeholders and risks: &  Beim Diebstahl von Forschungsdaten oder ähnlichen kann die ganze Firma schwer geschädigt werden, da die Konkurrenz in der Lage ist ihre Marktposition zu stärken.
+Werden nur materielle Werte gestohlen, so entstehen nur die Wiederbeschaffungskosten. \\ 
+\hline
+\end{tabular} 
+\end{table}
+
+\begin{table}
+\scriptsize
+\centering
+\caption{Misuse Case der aufzeigt, was durch Schulungen verhindert werden kann}
+\label{tab:MisuseCaseSchulung}
+\begin{tabular}{p{0.2\textwidth}p{0.8\textwidth}}
+\hline 
+Name: & Mögliche Sicherheitslücken, die durch schlecht geschultes Personal verursacht werden. \\ 
+\hline 
+Basic path: & \textbf{bp-1.} Der Angreifer dringt in ein Firmengebäude ein.\\ 
+& \textbf{bp-2.} Der Angreifer knackt ein Passwort per Brute-Force Attacke.\\ 
+& \textbf{bp-3.} Der Angreifer erhält Mitarbeiterpasswörter durch Phising.\\ 
+& \textbf{bp-4.} Der Angreifer erhält Mitarbeiterpasswörter durch Social Engineering.\\ 
+\hline 
+Preconditions: & \textbf{pc-1.} Ein Mitarbeiter hat Sicherheitsmaßnahmen ausgeschaltet. Ermöglicht:\textbf{bp-1.} \\
+& \textbf{pc-2.} Ein Mitarbeiter verwendet unsichere Passwörter. Ermöglicht: \textbf{bp-2.}\\
+& \textbf{pc-3.} Ein Mitarbeiter gibt kritische Daten preis. Ermöglicht: \textbf{bp-3.} und \textbf{bp-4.}\\
+\hline 
+Mitigation points: & \textbf{mp-1.} Schulungen und Überwachung der Mitarbeiter können \textbf{pc-1.} bis \textbf{pc-3.} verhindern und damit auch einen erfolgreichen Angriff.\\ 
+\hline 
+Mitigation guarantee: & Wenn die Mitarbeiter gut genug und regelmäßig geschult werden und die Einhaltung von Sicherheitsrichtlinien überwacht wird, können erfolgreiche Angriffe verhindert aber nicht zu 100\% ausgeschlossen werden. \\ 
+\hline 
+Stakeholders and risks: & Richtet sich nach der schwere des Angriffs. Kleines bis großes Risiko.  \\
 \hline 
 \end{tabular} 
 \end{table}
