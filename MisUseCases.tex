@@ -111,26 +111,57 @@ Die folgenden Misuse Cases und Misuse Case Diagramme geben einen Überblick übe
 
 \subsubsection{Diagramme}
 
-\begin{figure}
-\includegraphics[scale=0.8,angle=90]{images/MisUseCaseEinbruch.pdf} 
-\caption{Misuse Case Diagramm für ein Einbruchsszenario. Dem Angreifer werden verschiedene Sicherheitsmaßnahmen entgegengestellt, die einen Einbruch verhindern oder erschweren können}
-\end{figure}
-
-\begin{figure}
+\begin{figure}[h]
 \includegraphics[scale=0.8]{images/Hardware.pdf} 
 \caption{Misuse Case Diagramm für den Missbrauch von Außendienstmitarbeiterhardware. Sicherheitsrichtlinien für Geräte (z.B. Verschlüsselung) können Angriffe erschweren oder verhindern.}
 \end{figure}
 
+\begin{figure}[h]
+\includegraphics[scale=0.8,angle=90]{images/MisUseCaseEinbruch.pdf} 
+\caption{Misuse Case Diagramm für ein Einbruchsszenario. Dem Angreifer werden verschiedene Sicherheitsmaßnahmen entgegengestellt, die einen Einbruch verhindern oder erschweren können}
+\end{figure}
 
-\begin{figure}
+
+\begin{figure}[h]
 \includegraphics[scale=0.8,angle=90]{images/Schulung.pdf} 
 \caption{Misuse Case Diagramm welches die Vorteile von Mitarbeiter Schulungen aufzeigt.}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \includegraphics[scale=0.8,angle=90]{images/Server.pdf} 
 \caption{Misuse Case Diagramm für mögliche Angriffsszenarien auf Serversysteme. Dabei werden nur Angriffe über das Netzwerk berücksichtigt und physischer Zugriff nach einem Einbruch außen vor gelassen.}
 \end{figure}
 
-
+\clearpage
 \subsubsection{Textuelle Darstellung}
+
+\begin{table}[h]
+\scriptsize
+\centering
+\caption{Misuse Case: Missbrauch von Außendienstmitarbeiterhardware}
+\label{tab:MisuseCaseTemplate}
+\begin{tabular}{p{0.2\textwidth}p{0.8\textwidth}}
+\hline 
+Name: & Missbrauch von Außendienstmitarbeiterhardware \\ 
+\hline 
+Summary: & Ein Angreifer versucht über die Hardware von Außendienstmitarbeitern Zugang auf Firmendaten zu erlangen.\\
+\hline
+Basic path: & bp-1. Der Angreifer versucht Malware auf die ungesicherte Hardware zu schleusen. Dazu nutzt er ein ungesichertes und unbeaufsichtigtes Gerät.\\
+ & bp-2. Der angreifer stielt ein ungesichertes und unbeaufsichtigtes Gerät um später Zugriff auf die Daten zu erhalten.\\ 
+\hline 
+Mitigation points: & mp1. Sicherheitsrichtlinen für Geräte, wie z.B. Verschlüsselung, Automatische Sperrung bei Inaktivität, Virenschutz, Verbot von eigenen Geräten, etc. können den Angriff erschweren oder unmöglich machen. Sollte der ANgreifer nur die Hardware stehlen wollen und nichts mit den Firmendaten anfangen können,so bleibt der Verlust relativ gering, solange Backups existieren.\\ 
+\hline 
+Trigger: & Der Außendienstmitarbeiter lässt seinen Laptop oder ein anderes Gerät mit Firmendaten für kurze Zeit unbeaufsichtigt. Dies erleichtert den Angriff nur. Ein Diebstahl ist immer möglich.\\ 
+\hline 
+Preconditions: & Der Außendienstmitarbeiter speichert Firmendaten auf unsicherer Hardware.\\ 
+\hline 
+Mitigation guarantee: & Der Angreifer kann keine Malware einschleusen, da der Rechner gesperrt und/oder passwortgesichert ist (bp-1). Der Angreifer kann mit gestohlener Hardware nichts anfangen, da alle Daten verschlüsselt sind (bp-2).\\ 
+\hline 
+Misuser profile: & Der Angreifer ist ein Mitarbeiter der Konkurrenz, Industriespion oder jemand, der nur die Hardware möchte. \\ 
+\hline 
+Scope: & Kompletter Betrieb \\ 
+\hline 
+Stakeholders and risks: & Sollten wichtige Forschungs- oder Produktionsdaten gestohlen und an die Konkurrenz verkauft werden, so können schwere Verluste für das Unternehmen entstehen. \\ 
+\hline 
+\end{tabular} 
+\end{table}
