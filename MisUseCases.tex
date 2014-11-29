@@ -1,6 +1,6 @@
 \section{Misuse Cases}
 
-Use Cases spielen nicht nur bei der Softwareentwicklng eine bedeutende Rolle beim requirements engineering. Es ist jedoch in der UML 2 Spezifikation nicht möglich Sicherheitsanalysen mit Use Cases durchzuführen \cite{sindre2005eliciting}. 
+Use Cases spielen nicht nur bei der Softwareentwicklung eine bedeutende Rolle beim requirements engineering. Es ist jedoch in der UML 2 Spezifikation nicht möglich Sicherheitsanalysen mit Use Cases durchzuführen \cite{sindre2005eliciting}. 
 In \cite{sindre2005eliciting} wird eine Erweiterung von Use Cases vorgestellt, die es auch ermöglicht Missbrauch darzustellen. Während Use Cases etwas von Wert für den Systembesitzer und Stakeholder schaffen, stellen Misuse Cases einen Schaden am System und Werten dar.
 Misuse Case und Misuser werden dabei wie folgt definiert.
 \begin{quote}
@@ -26,7 +26,7 @@ Misuse Cases lassen sich ähnlich regulärer Use Cases darstellen. Tabelle~\ref{
 \begin{table}
 \scriptsize
 \centering
-\caption{Template für eine ausführliche Misuse Case darstellung aus \cite{sindre2005eliciting}}
+\caption{Template für eine ausführliche Misuse Case Darstellung aus \cite{sindre2005eliciting}}
 \label{tab:MisuseCaseTemplate}
 \begin{tabular}{p{0.2\textwidth}p{0.8\textwidth}}
 \hline 
@@ -102,7 +102,7 @@ Terminology and explanations: & This field contains explanations of technical te
 \end{table}
 
 \subsection{Misuse Case Diagramme}
-Wie Use Case Diagramme, dienen Misuse Case Diagramme der Übersicht und verbindung mehrerer Use Cases bzw. Misuse Cases. Fowler beschreibt das Use Case Diagramm in \cite{fowler2004uml} als nützlich aber nicht notwendig und empfiehlt sich auf die textuelle Darstellung zu konzentrieren. 
+Wie Use Case Diagramme, dienen Misuse Case Diagramme der Übersicht und Verbindung mehrerer Use Cases bzw. Misuse Cases. Fowler beschreibt das Use Case Diagramm in \cite{fowler2004uml} als nützlich aber nicht notwendig und empfiehlt sich auf die textuelle Darstellung zu konzentrieren. 
 
 Seamonster unterstützt nur die Darstellung der Diagramme, nicht aber die textuelle Darstellung.
 
@@ -147,15 +147,15 @@ Name: & Missbrauch von Außendienstmitarbeiterhardware \\
 Summary: & Ein Angreifer versucht über die Hardware von Außendienstmitarbeitern Zugang auf Firmendaten zu erlangen.\\
 \hline
 Basic path: & \textbf{bp-1.} Der Angreifer versucht Malware auf die ungesicherte Hardware zu schleusen. Dazu nutzt er ein ungesichertes und unbeaufsichtigtes Gerät.\\
- & \textbf{bp-2.} Der angreifer stielt ein ungesichertes und unbeaufsichtigtes Gerät um später Zugriff auf die Daten zu erhalten.\\ 
+ & \textbf{bp-2.} Der Angreifer stiehlt ein ungesichertes und unbeaufsichtigtes Gerät um später Zugriff auf die Daten zu erhalten.\\ 
 \hline 
-Mitigation points: & \textbf{mp1.} Sicherheitsrichtlinen für Geräte, wie z.B. Verschlüsselung, Automatische Sperrung bei Inaktivität, Virenschutz, Verbot von eigenen Geräten, etc. können den Angriff erschweren oder unmöglich machen. Sollte der Angreifer nur die Hardware stehlen wollen und nichts mit den Firmendaten anfangen können,so bleibt der Verlust relativ gering, solange Backups existieren.\\ 
+Mitigation points: & \textbf{mp1.} Sicherheitsrichtlinien für Geräte, wie z.B. Verschlüsselung, Automatische Sperrung bei Inaktivität, Virenschutz, Verbot von eigenen Geräten, etc. können den Angriff erschweren oder unmöglich machen. Sollte der Angreifer nur die Hardware stehlen wollen und nichts mit den Firmendaten anfangen können,so bleibt der Verlust relativ gering, solange Backups existieren.\\ 
 \hline 
 Trigger: & Der Außendienstmitarbeiter lässt seinen Laptop oder ein anderes Gerät mit Firmendaten für kurze Zeit unbeaufsichtigt. Dies erleichtert den Angriff nur. Ein Diebstahl ist immer möglich.\\ 
 \hline 
 Preconditions: & Der Außendienstmitarbeiter speichert Firmendaten auf unsicherer Hardware.\\ 
 \hline 
-Mitigation guarantee: & Der Angreifer kann keine Malware einschleusen, da der Rechner gesperrt und/oder passwortgesichert ist (\textbf{bp-1}). Der Angreifer kann mit gestohlener Hardware nichts anfangen, da alle Daten verschlüsselt sind (\textbf{bp-2}).\\ 
+Mitigation guarantee: & Der Angreifer kann keine Malware einschleusen, da der Rechner gesperrt und/oder passwortgeschützt ist (\textbf{bp-1}). Der Angreifer kann mit gestohlener Hardware nichts anfangen, da alle Daten verschlüsselt sind (\textbf{bp-2}).\\ 
 \hline 
 Misuser profile: & Der Angreifer ist ein Mitarbeiter der Konkurrenz, Industriespion oder jemand, der nur die Hardware möchte. \\ 
 \hline 
@@ -200,7 +200,7 @@ Mitigation guarantee: & Der Einbrecher ist durch Sicherheitsmaßnahmen nicht in 
 \hline 
 Related business rules: & Das Auftreten eines Einbruchs kann die Firma je nach gestohlenem Gut leicht bis sehr schwer treffen. Die Schädigung von Firmenwerten ist immer zu erwarten.\\ 
 \hline 
-Misuser profile: & Der Einbrecher kann ein Industriespion sein oder jemand, der es nur auf Hardware oderähnliche materielle Werte abgesehen hat. \\ 
+Misuser profile: & Der Einbrecher kann ein Industriespion sein oder jemand, der es nur auf Hardware oder ähnliche materielle Werte abgesehen hat. \\ 
 \hline 
 Scope: & Gesamter Betrieb \\
 \hline 
