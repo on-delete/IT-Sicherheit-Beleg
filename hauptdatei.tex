@@ -30,8 +30,22 @@
 \usepackage{tabularx}
 \usepackage{hyperref}
 \usepackage{tabu}
+\usepackage[table]{xcolor}
+\usepackage{url}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% Definitions
+\definecolor{mydarkblue}{rgb}{0.0,0.0,0.5}
+\definecolor{mylightblue}{rgb}{0.85,0.85,0.85}
+\definecolor{mylightgray}{rgb}{0.95,0.95,0.95}
 
 \newcommand{\HRule}{\rule{\linewidth}{0.4mm}}
+
+\clubpenalty=10000
+\widowpenalty=10000
 
 \begin{document}
 \include{deckblatt}
@@ -48,7 +62,8 @@
 
 \include{einleitung}
 
-%\include{tools}
+\include{tools}
+
 \include{vorgehenAnalyse}
 
 %\include{analyse_FBI}

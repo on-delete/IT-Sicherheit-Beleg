@@ -1,0 +1,232 @@
+\section{Security Modeling Tools}
+
+Die Anforderungen für die Auswahl der Werkzeuge zur Sicherheitsmodellierung umfassen ein \textit{Systemmodell}, ein \textit{Bedrohungsmodell} und 
+damit verbundene \textit{Sicherheitseigenschaften}~\cite{bau2011security}.
+
+Das \textit{Systemmodell} definiert das Verhalten des Systems bei unbeabsichtigten und beabsichtigten Eingaben.
+Dabei beruht das Modell auf Anforderungen und Entwurfsspezifikationen oder Quellcoderevisionen.
+
+Beim \textit{Bedrohungsmodell} werden die Ressourcen mit den jeweiligen Zugriffen oder externen Eingriffen darauf festgelegt.
+So kann zum Beispiel bei einem Angriff auf das Betriebssystem mit bösartigem Code ein Nutzerprozess manipuliert werden. Der Angreifer ist 
+jedoch nicht in der Lage, den Kernel des Betriebssystems zu ändern.
+Ein weiteres Beispiel stellt einen Netzwerkangriff dar, bei dem auf Netzwerknachrichten zugegriffen wird, jedoch kein Zugriff auf den internen Zustand
+des Host möglich ist.
+
+Die \textit{Sicherheitseigenschaften} legen die zu schützenden Eigenschaften fest.
+
+\subsection{Kriterien}
+Das zu verwendende Programm soll dem Nutzer die bestmögliche Un\-ter\-stüt\-zung geben, um eine \textit{Risiko}- bzw. eine \textit{Bedrohungsanalyse} durchzuführen.
+Weiterhin soll das Programm durch den Nutzer leicht und intuitiv zu bedienen sein.
+\begin{itemize}
+\item Eine grafische Benutzeroberfläche zur Visualisierung der Modelle ist dabei unverzichtbar.
+
+\item Ebenfalls sollte die Modellierung durch die bekannte und bewährte \textit{Unified Modeling Language~(UML)} erfolgen.
+
+\item Für ein flexibles Arbeiten ist eine nicht-kommerzielle und platt\-form\-un\-ab\-häng\-ige Lösung unausweichlich.
+
+\item In Bezug auf die \textit{Bedrohungs}- und \textit{Risikoanalyse} sollte der Nutzer durch integrierte Artefakte in der Lage sein \textit{Attack-Trees} und\\ \textit{MisUseCases}
+abzubilden.
+
+\item Automationen zur Erstellung von Risikomatrizen und zur Analyse hinsichtlich der Kosten und Eintrittswahrscheinlichkeiten sollte das Programm bereitstellen.
+\end{itemize}
+
+\pagebreak
+
+\subsection{SecurITree}
+
+Tabelle~\ref{tab:secitree} zeigt die Eigenschaften und den Funktionsumfang des Programms \textit{SecurITree}.
+Das plattformübergreifende Programm \textit{SecurITree} eignet sich für die Erstellung von \textit{Attack-Trees} und für eine einfache \textit{Bedrohungs}- und \textit{Risikoanalyse}.
+
+Der Hersteller \textit{Amenza} bietet die Möglichkeit das Tool als Testversion zu evaluieren, wobei eine \textit{Evaluationslizenz} benötigt wird. Für die standardmäßige Verwendung kann \textit{SecurITree} für 10.500 USD käuflich erworben werden. Somit widerspricht \textit{SecurITree} den Kriterien in dem Punkt der freien Verfügbarkeit.
+
+\begin{table}[htbp]
+\caption{Eigenschaften von SecurITree}
+\label{tab:secitree}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{ l !{\color{white}\vrule}  X }
+%\hline
+\rowcolor{mydarkblue}  \multicolumn{2}{|c|}{ \textbf{ \color{white}{SecurITree}} } 					\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightblue}Tool Kategorisierung 	& Security Modeling Tools	\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightgray}Aktuelle Version  		& 2.5 								\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightblue}Beschreibung				& \textit{SecurITree} ist ein einfach zu nutzendes Softwarepaket für \textit{Attack Tree} basierte Bedrohungs/Risikoanalyse.
+Es ist lauffähig auf Windows, Apple und Linux Plattformen.
+ 		\linebreak \linebreak Kostenpflichtig							\\
+\arrayrulecolor{white}\hline 
+\rowcolor{mylightgray}Architektur				& Plattformübergreifend \\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightblue}Funktionsumfang		& \begin{itemize}
+										\item  Bedrohungsbäume
+										\item Bedrohungsanalyse
+										\item Risikoanalyse
+										\item logische Bäume
+									\end{itemize}\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightgray} Webseite		&		\url{https://www.amenaza.com} \\
+\arrayrulecolor{white}\hline
+\end{tabularx}
+\end{table}
+
+
+\subsection{Seamonster}
+Seamonster (Tabelle~\ref{tab:seamonster}) ist ein Freeware-Tool um Bedrohungsmodelle zu erstellen. Es basiert auf einer Notation, die sich bei erfahrenen Sicherheitsexperten bewährt hat. 
+
+In Seamonster steht neben \textit{Vulnerabilty cause graphs}, \textit{Security Activity graphs} und \textit{Security Modellen}, vor allem die Erstellung von \textit{Misuse-Cases} und \textit{Attack-Trees} im Vordergrund.
+
+Die Defizite von Seamonster liegen bei den Kriterien der Risikomatrix und der Analyse, die nicht abgedeckt werden.
+
+\begin{table}[h!tbp]
+\renewcommand{\arraystretch}{1.5}
+\caption{Eigenschaften von Seamonster}
+\label{tab:seamonster}
+\begin{tabularx}{\textwidth}{ l !{\color{white}\vrule}  X }
+%\hline
+\rowcolor{mydarkblue}  \multicolumn{2}{|c|}{ \textbf{ \color{white}{SeaMonster}} } 					\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightblue}Tool Kategorisierung 	& Security Modeling Tools	\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightgray}Aktuelle Version  		& 5.0 								\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightblue}Beschreibung				& SeaMonster ist ein \textit{Security Modeling Tool} für Bedrohungsmodelle. Es unterstützt Notationen welche von 
+Sicherheitsexperten und Analysten verwendet werden. SeaMonster unterstützt beim erstellen von \textit{Attack Trees} und \textit{Missue Cases}.						\linebreak \linebreak Gratis			\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightgray}Architektur				& Die Architektur von SeaMonster basiert auf \textit{Eclipse}, welches mit Plugins erweitert werden kann. Die zugehörigen Plugins sind 
+								   \textit{Graphical Modeling Framework (GMF)}, das \textit{Eclipse Modeling Framework (EMF)} und das 
+								  \textit{Graphical Editing Framework (GEF)} \\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightblue}Funktionsumfang		& \begin{itemize}
+										\item 2D Diagramme
+										\item UML
+										\item Missue Cases 
+										\item Attack Trees 
+										\item Vulnerability cause Graphs 
+										\item Security Activity Graphs 
+										\item Security model 
+									\end{itemize}\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightgray} Webseite		&		\url{http://seamonster.wiki.sourceforge.net/} \\
+\arrayrulecolor{white}\hline
+\end{tabularx}
+\end{table}
+
+\pagebreak
+\subsection{CORAS}
+Tabelle~\ref{tab:coras} zeigt die Eigenschaften des \textit{CORAS-Tools}.
+Mit dem frei verfügbaren Diagrammeditor \textit{CORAS} wird dem Nutzer die Modellierung aller Arten von Diagrammen ermöglicht. Da \textit{CORAS} auf \textit{Eclipse} basiert, ist ein plattformübergreifender Einsatz gewährleistet.  Das Tool unterstützt die Erstellung von 2D-Diagrammen aufbauend auf UML, die modellbasierte \textit{Risikoanalyse}, eine Syntaxprüfung, sowie eine methodenorientierte Analyse.
+
+Schwachstellen des Tools sind eine fehlende \textit{Attack-Tree-Modellierung}, eine automatisierte Analyse und das Fehlen von \textit{Risiko}- bzw. \textit{Bedrohungsmatrizen}.
+
+
+\begin{table}[htbp]
+\renewcommand{\arraystretch}{1.5}
+\caption{Eigenschaften von CORAS}
+\label{tab:coras}
+\begin{tabularx}{\textwidth}{ l !{\color{white}\vrule}  X }
+%\hline
+\rowcolor{mydarkblue}  \multicolumn{2}{|c|}{ \textbf{ \color{white}{CORAS}} } 					\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightblue}Tool Kategorisierung 	& Security Modeling Tools	\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightgray}Aktuelle Version  		& 1.1 								\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightblue}Beschreibung				& Das \textit{CORAS tool} ist ein Diagrammeditor, welcher frei verfügbar ist.
+Das Tool wurde für die Unterstützung von \textit{on-the-fly} Modellierungen aller Arten von CORAS Diagrammen entworfen.
+ 		\linebreak \linebreak Gratis							\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightgray}Architektur				& Plattformübergreifend \\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightblue}Funktionsumfang		& \begin{itemize}
+										\item  2D Diagramme
+										\item UML
+										\item modellbasierte Risikoanalyse
+										\item Reporting
+										\item Methodenorientierte Analyse
+									\end{itemize}\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightgray} Webseite		&		\url{http://coras.sourceforge.net} \\
+\arrayrulecolor{white}\hline
+\end{tabularx}
+\end{table}
+
+\pagebreak
+\subsection{Microsoft Threat Modeling Tool}
+Die Eigenschaften von \textit{Microsofts Threat Modeling Tool} sind in Tabelle~\ref{tab:mstool} zu sehen.
+Das Programm unterstützt Softwareentwickler bei der Erstellung und \textit{Analyse} von \textit{Bedrohungsmodellen} und deren Analyse. Dabei ist das Tool unter Microsoft Windows lauffähig und steht zum freien Download zur Verfügung.
+
+Da das Tool speziell für eine Unterstützung während des Softwareentwicklungsprozesses entwickelt wurde, ist das Tool für die Modellierung von allgemeinen Sicherheitssystemen ungeeignet.
+
+\begin{table}[htbp]
+\renewcommand{\arraystretch}{1.5}
+\caption{Eigenschaften von Microsofts Threat Modeling Tool}
+\label{tab:mstool}
+\begin{tabularx}{\textwidth}{ l !{\color{white}\vrule}  X }
+%\hline
+\rowcolor{mydarkblue}  \multicolumn{2}{|c|}{ \textbf{ \color{white}{Microsoft Threat Modeling Tool}} } 					\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightblue}Tool Kategorisierung 	& Security Modeling Tools	\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightgray}Aktuelle Version  		& 1.0								\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightblue}Beschreibung				&  Das \textit{SDL Threat Modeling Tool} ist das erste Bedrohungsmodellierung-Tool, welches nicht nur für Sicherheitsexperten entwickelt wurde. Die Bedrohungsmodellierung wird durch eine Führung bei dem Erstellen und Analysieren des Bedrohungsmodells für Entwickler vereinfacht.
+		\linebreak \linebreak Gratis							\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightgray}Architektur				& Windows \\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightblue}Funktionsumfang		& \begin{itemize}
+										\item  2D Diagramme
+										\item Bedrohungsanalyse und Modellierung
+									\end{itemize}\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightgray} Webseite		&		\url{http://www.microsoft.com/en-us/download/details.aspx?id=42518} \\
+\arrayrulecolor{white}\hline
+\end{tabularx}
+\end{table}
+
+\subsection{Security Requirements Modeling Tool}
+Das \textit{Security Requirements Modeling Tool} (Tabelle~\ref{tab:sts}) ist eine Freeware zur Modellierung und Analyse von Sicherheitskritischen Systemen. Dabei wird auf eine herstellereigene Modellierungssprache  (STS-ml) gesetzt. Des weiteren basiert das Tool auf dem \textit{Eclipse RCP Framework}, wodurch  plattformübergreifendes Arbeiten gegeben ist. Weitere Features  sind die Dokumentgenerierung, die Sicherheitsanforderungsanalyse und eine automatisierte Analyse hinsichtlich der Wohlgeformtheit und der Modellsyntax.
+
+Da die Sprache \textit{STS-ml} anders als UML keine standardisierte Sprache in der Welt der Modellierung darstellt, ist hierbei eine längere Einarbeitungszeit notwendig. Weitere negative Punkte des Tools sind die fehlende Unterstützung zur Erstellung von \textit{Misuse-Cases} und \textit{Bedrohungsmatrizen}, sowie die nicht vorhandene automatische Analyse bezüglich der Kosten und der Auftrittswahrscheinlichkeiten.
+
+\begin{table}[htbp]
+\renewcommand{\arraystretch}{1.5}
+\caption{Eigenschaften vom  Security Requirements Modeling Tool}
+\label{tab:sts}
+\begin{tabularx}{\textwidth}{ l !{\color{white}\vrule}  X }
+%\hline
+\rowcolor{mydarkblue}  \multicolumn{2}{|c|}{ \textbf{ \color{white}{Security Requirements Modeling Tool}} } 					\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightblue}Tool Kategorisierung 	& Security Modeling Tools	\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightgray}Aktuelle Version  		& 2.0								\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightblue}Beschreibung				&  Das \textit{STS-Tool} ist das Modellierungs- und Analyse-Tool, welches auf der \textit{STS-Modeling Language (STS-ml)} aufbaut. Es ist eine eigenständige Applikation, welche auf dem \textit{Eclipse RCP Framework} basiert. 		\linebreak \linebreak Gratis							\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightgray}Architektur				& Plattformübergreifend \\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightblue}Funktionsumfang		& \begin{itemize}
+										\item  2D Diagramme
+										\item STS-ml 
+										\item Dokumentgenerierung
+										\item Sicherheitsanforderungsanalyse
+										\item automatisierte Analyse hinsichtlich Wohlgeformtheit und Syntax
+									\end{itemize}\\
+\arrayrulecolor{white}\hline
+\rowcolor{mylightgray} Webseite		&		\url{http://www.sts-tool.eu} \\
+\arrayrulecolor{white}\hline
+\end{tabularx}
+\end{table}
+
+\pagebreak
+\subsection{Auswertung der Tools}
+Nach dem Betrachten aller Eigenschaften der zuvor beschriebenen Tools ergibt sich das Fazit, dass keines der Programme alle geforderten 
+Eigenschaften abdeckt.
+So wäre \textit{SecurITree} im Vergleich zu den anderen Tools die beste Wahl, ist jedoch durch den kommerziellen Vertrieb für die von 
+uns geforderten Anforderungen untragbar.
+
+Die zweite Wahl fällt auf \textit{Seamonster}, da es im Vergleich zu den anderen Tools die wenigsten Defizite aufweist.
+Damit ist \textit{Seamonster} für die Bearbeitung des Projekts am besten geeignet.
+
+
+
