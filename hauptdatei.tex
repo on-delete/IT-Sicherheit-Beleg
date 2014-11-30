@@ -30,6 +30,7 @@
 \usepackage{tabularx}
 \usepackage{hyperref}
 \usepackage{tabu}
+\usepackage{booktabs}
 \usepackage[table]{xcolor}
 \usepackage{url}
 \usepackage{lmodern}
@@ -48,15 +49,23 @@
 \widowpenalty=10000
 
 \begin{document}
+
+%\newpage
+\pagestyle{empty}
 \include{deckblatt}
 \include{abstract}
+\pdfbookmark{\contentsname}{toc}\tableofcontents
+\thispagestyle{empty}
 
 \newpage
 \pagestyle{empty}
-\pdfbookmark{\contentsname}{toc}\tableofcontents
-\thispagestyle{empty}
-\pagestyle{plain}
+\listoffigures
 
+\newpage
+\listoftables
+
+\newpage
+\pagestyle{plain}
 \setcounter{section}{0}
 \pagenumbering{arabic}
 
@@ -65,10 +74,6 @@
 \include{tools}
 
 \include{vorgehenAnalyse}
-
-%\include{analyse_FBI}
-
-%\include{analyse_FBII}
 
 \include{MisUseCases}
 
@@ -80,7 +85,7 @@
 
 \include{uml_alternative}
 
-%\include{fazit}
+\include{Fazit}
 
 %======================================================================
 %   Literaturverzeichnis
@@ -103,6 +108,28 @@ Arbeit selbstständig angefertigt, nicht anderweitig zu
 Prüfungszwecken vorgelegt und keine anderen als die angegebenen
 Hilfsmittel verwendet haben. Sämtliche wissentlich verwendete
 Textausschnitte, Zitate oder Inhalte anderer Verfasser
-wurden ausdrücklich als solche gekennzeichnet.\\[2ex]
+wurden ausdrücklich als solche gekennzeichnet.%\\[2ex]
+
+\vspace{2cm}\noindent
+%--------------------------------- \newline
+\vspace{1cm}\noindent
+--------------------------------- \newline
+\vspace{1cm}\noindent
+--------------------------------- \newline
+\vspace{1cm}\noindent
+--------------------------------- \newline
+\vspace{1cm}\noindent
+--------------------------------- \newline
+\vspace{1cm}\noindent
+--------------------------------- \newline
+\vspace{1cm}\noindent
+--------------------------------- \newline
+\vspace{1cm}\noindent
+--------------------------------- \newline
+\vspace{1cm}\noindent
+--------------------------------- \newline
+\vspace{1cm}\noindent
+--------------------------------- \newline
+Görlitz, den 01. Dezember 2014
 
 \end{document}

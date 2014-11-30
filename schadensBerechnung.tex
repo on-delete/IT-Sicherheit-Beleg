@@ -27,106 +27,112 @@ Risiko-Analyse Tabellen sind nach folgenden Punkten aufgebaut:
 Im Folgenden sind die Ergebnisse für AutoVit und Fakultät Informatik an der HSZG dargestellt. Die Daten der Risiko Analyse beider Einrichtungen sind in etwa identisch, weil beide ähnliche Werte und Bedrohungen haben.
 
 \begin{table}[H]
-	\sffamily
-	\caption{Hardware vs. Diebstahl und Malware}
-	\tabulinesep = 1mm %bringt die Reihen etwas weiter auseinander, angenehmer zu lesen
-	\centering
-		\begin{tabu} to 0.9\textwidth {| X[1]  X[1, p] | X[1] | X[1] | X[1] | X[1] | X[1] |}
-		\hline
-		\textbf{Wert} & \textbf{Bedrohung} & \textbf{Schwachstelle} & \textbf{Wahrscheinlichkeit} & \textbf{Schaden} & \textbf{Risiko} & \textbf{Maßnahme}\\
-		\hline 
-		Kucera, Adam &  & & & & &\\
-		\hline
-	\end{tabu}
+\caption{Für die Bedrohung Einbruch}
+\begin{tabu} to \linewidth {X[-1,l,m] X[-1,l,m] X[-1,l,m] X[-1,l,m] X[-1,l,m] }
+\toprule 
+\textbf{Schwachstelle} & \textbf{Wahrschein-\linebreak{}lichkeit} & \textbf{Schaden} & \textbf{Risiko} & \textbf{Maßnahme}\tabularnewline
+\midrule 
+freier Zugang auf Firmengelände & 4 & 2 & 8 & Zaun bauen, Sichere Zugang\tabularnewline
+keine 24 Stunden Videoüberwachung & 4 & 2 & 8 & Videoüberwachung\tabularnewline
+keine/schlechte Überprüfung des Inventars & 2 & 4 & 8 & Regelmäßige Kontrolle des Inventars\tabularnewline
+Generalschlüssel für alle Mitarbeiter & 2 & 3 & 6 & Sicherheitsfenster\tabularnewline
+ungesicherte Türen & 3 & 3 & 9 & Sicherheitstüren \& Schulung\tabularnewline
+Ausgeschaltete Sicherheitsmaßnahmen & 3 & 4 & 12 & Überwachung der Mitarbeiter\tabularnewline
+\bottomrule 
+\end{tabu}
 \end{table}
 
-Die Wahrscheinlichkeit, dass ein Einbruch durch freien Zugang auf das Firmengelände und  nicht vorhanden sein von 24 Stunden Videoüberwachung passiert, ist hoch. Der Schaden, der angerichtet werden kann ist verhältnismäßig gering. Daraus resultiert ein niedriges Gesamtrisiko.
-Die Wahrscheinlichkeit, dass es keine oder schlechtes Überprüfung des Inventars gibt, ist niedrig, weil der Hausmeister es regelmäßig kontrolliert, aber die Schäden sind hoch, weil das Material sehr viel wert ist. Daraus resultiert ein niedriges Gesamtrisiko.
+Die Wahrscheinlichkeit, dass ein Einbruch durch freien Zugang auf das Firmengelände und nicht vorhanden sein von 24 Stunden Videoüberwachung passiert, ist hoch. Der Schaden, der angerichtet werden kann, ist verhältnismäßig gering. Daraus resultiert ein niedriges Gesamtrisiko.
+Die Wahrscheinlichkeit, dass es keine oder eine schlechte Überprüfung des Inventars gibt, ist niedrig, weil der Hausmeister es regelmäßig kontrolliert, aber die Schäden sind hoch, weil das Material sehr viel wert ist. Daraus resultiert ein niedriges Gesamtrisiko.
 Die Wahrscheinlichkeit, dass ein Einbruch durch Generalschlüssel für alle Mitarbeiter und  ungesicherte Türen passiert, ist niedrig und mittelmäßig, weil die meisten Büros ihr eigenes Schloss haben, die Türen haben keine besondere Sicherheitsvorrichtung. Der Schaden, der angerichtet werden kann ist verhältnismäßig gering. Daraus resultiert ein niedriges Gesamtrisiko.
-Die Maßnahme um die oben genannten Bedrohungen zu vermeiden sind, einen sicheren Eingang oder Zaun bauen, Videoüberwachung einstellen, das Inventar kontrollieren, Sicherheitsvorrichtungen an die Türen montieren und Schulung für die Mitarbeiter zu geben.
+Die Maßnahme um die oben genannten Bedrohungen zu vermeiden sind, einen sicheren Eingang oder Zaun bauen, Videoüberwachung einstellen, das Inventar kontrollieren, Sicherheitsvorrichtungen an den Türen montieren und Schulung für die Mitarbeiter durchzuführen.
 
 \begin{table}[H]
-	\sffamily
-	\caption{Hardware vs. Diebstahl und Malware}
-	\tabulinesep = 1mm %bringt die Reihen etwas weiter auseinander, angenehmer zu lesen
-	\centering
-		\begin{tabu} to 0.9\textwidth {| X[1]  X[1] | X[1] | X[1] | X[1] | X[1] | X[1] |}
-		\hline
-		\textbf{Wert} & \textbf{Bedrohung} & \textbf{Schwachstelle} & \textbf{Wahrscheinlichkeit} & \textbf{Schaden} & \textbf{Risiko} & \textbf{Maßnahme}\\
-		\hline 
-		Kucera, Adam &  & & & & &\\
-		\hline
-	\end{tabu}
+\caption{Für die Bedrohung Diebstahl der Hardware}
+\begin{tabu} to \linewidth {X[-1,l,m] X[-1,l,m] X[-1,l,m] X[-1,l,m] X[-1,l,m] }
+\toprule 
+\textbf{Schwachstelle} & \textbf{Wahrschein-\linebreak{}lichkeit} & \textbf{Schaden} & \textbf{Risiko} & \textbf{Maßnahme}\tabularnewline
+\midrule 
+Unsichere Firmenhardware & 3 & 5 & 15 & Sicherheits-\linebreak{}richtlinien von der Leitung\tabularnewline
+Firmendaten auf BYOD Gerät & 2 & 5 & 10 & Sicherheits-\linebreak{}richtlinien von der Leitung\tabularnewline
+\bottomrule 
+\end{tabu}
 \end{table}
-
-Mit einer unsicheren Firmenhardware und Firmendaten auf BYOD Geräten ist das Risiko am höchsten. Obwohl die Wahrscheinlichkeit, dass die oben genannten Schachstellen eintreten niedrig sind. Die Leitung der Firma/Hochschule hat die Mitarbeiter bezüglich Sicherheitsrichtlinien geschult.
 
 \begin{table}[H]
-	\sffamily
-	\caption{Serverkonfiguration vs. Bedrohungen}
-	\tabulinesep = 1mm %bringt die Reihen etwas weiter auseinander, angenehmer zu lesen
-	\centering
-		\begin{tabu} to 0.9\textwidth {| X[1] | X[1] | X[1] | X[1] | X[1] | X[1] | X[1] |}
-		\hline
-		\textbf{Wert} & \textbf{Bedrohung} & \textbf{Schwachstelle} & \textbf{Wahrscheinlichkeit} & \textbf{Schaden} & \textbf{Risiko} & \textbf{Maßnahme}\\
-		\hline 
-		Kucera, Adam &  & & & & &\\
-		\hline
-	\end{tabu}
+\caption{Für die Bedrohung Malware}
+\begin{tabu} to \linewidth {X[-1,l,m] X[-1,l,m] X[-1,l,m] X[-1,l,m] X[-1,l,m] }
+\toprule 
+\textbf{Schwachstelle} & \textbf{Wahrschein-\linebreak{}lichkeit} & \textbf{Schaden} & \textbf{Risiko} & \textbf{Maßnahme}\tabularnewline
+\midrule 
+Unsichere Firmenhardware & 2 & 4 & 8 & Sicherheits-\linebreak{}richtlinien von der Leitung\tabularnewline
+Firmendaten auf BYOD Geräten & 3 & 5 & 15 & Sicherheits-\linebreak{}richtlinien von der Leitung\tabularnewline
+\bottomrule 
+\end{tabu}
 \end{table}
 
-Im Prinzip muss ein Server richtig konfiguriert werden, andernfalls ist die Wahrscheinlichkeit, dass die Bedrohungen in Tabelle 2 eintreten noch größer. 
-Die höchsten Gesamtrisiken der Serverkonfiguration sind Angriffe eines unsicheren Diensts und Malware-Einschleusen durch fehlende oder schlechte Firewall-Konfiguration. 
-Gezielte Angriffe auf das System durch die schlechte Schulung der Mitarbeiter, stellen auch ein sehr hohes Risiko der Server Konfiguration dar.  DDoS Attacken können durch fehlende AntiVirus-Programme ausgelöst werden.
+Mit einer unsicheren Firmenhardware und Firmendaten auf BYOD\footnote{Bring Your Own Device: Bezeichnung für private mobile Endgeräte wie Laptops oder Smartphones} Geräten ist das Risiko am höchsten, obwohl die Wahrscheinlichkeiten, dass die oben genannten Schwachstellen eintreten, niedrig sind. Die Leitung der Firma/Hochschule hat die Mitarbeiter bezüglich der Sicherheitsrichtlinien zu schulen.
 
 \begin{table}[H]
-	\sffamily
-	\caption{Schulung vs. Bedrohungen}
-	\tabulinesep = 1mm %bringt die Reihen etwas weiter auseinander, angenehmer zu lesen
-	\centering
-		\begin{tabu} to 0.9\textwidth {| X[1] | X[1] | X[1] | X[1] | X[1] | X[1] | X[1] |}
-		\hline
-		\textbf{Wert} & \textbf{Bedrohung} & \textbf{Schwachstelle} & \textbf{Wahrscheinlichkeit} & \textbf{Schaden} & \textbf{Risiko} & \textbf{Maßnahme}\\
-		\hline 
-		Kucera, Adam &  & & & & &\\
-		\hline
-	\end{tabu}
+\caption{Für die Bedrohung Serverkonfiguration}
+\begin{tabu} to \linewidth {X[-1,l,m] X[-1,l,m] X[-1,l,m] X[-1,l,m] X[-1,l,m] }
+\toprule 
+\textbf{Schwachstelle} & \textbf{Wahrschein-\linebreak{}lichkeit} & \textbf{Schaden} & \textbf{Risiko} & \textbf{Maßnahme}\tabularnewline
+\midrule 
+Default Accounts mit Default Passwörtern scannen & 1 & 4 & 4 & Default Accounts deaktivieren\tabularnewline
+unnötige/unsichere Dienste & 1 & 4 & 4 & unnötige Dienste deaktivieren\tabularnewline
+fehlende/schlecht konfigurierte Firewall & 2 & 5 & 10 & Intrusion Detektion System\tabularnewline
+Exploits durch fehlende Updates & 2 & 3 & 6 & System regelmäßig updaten/Virenscanner\tabularnewline
+DDos Angriffe & 2 & 5 & 10 & Schutzfunktionen des Systems einrichten\tabularnewline
+\bottomrule
+\end{tabu}
 \end{table}
 
-Eine professionelle Schulung der Mitarbeiter kann Risiken vermeiden.
-Unsichere Passwörter von Mitarbeitern sind anfälliger für Hackers. Wirtschaftsethik spielt  eine wichtige Rolle, sonst können interne Sozial Engineering Informationen, durch Missbrauch der Daten zweckentfremdet werden.
+Im Prinzip muss ein Server richtig konfiguriert werden, andernfalls ist die Wahrscheinlichkeit, dass die genannten Bedrohungen eintreten noch größer. Die höchsten Gesamtrisiken der Serverkonfiguration sind Angriffe eines unsicheren Dienstes und Malware-Einschleusungen durch fehlende oder schlechte Firewall-Konfigurationen. Gezielte Angriffe auf das System durch die schlechte Schulung der Mitarbeiter, stellen auch ein sehr hohes Risiko dar. DDos Attacken können durch fehlende Schutzmechanismen ausgelöst werden.
 
 \begin{table}[H]
-	\sffamily
-	\caption{Industriespionage vs. Bedrohungen}
-	\tabulinesep = 1mm %bringt die Reihen etwas weiter auseinander, angenehmer zu lesen
-	\centering
-		\begin{tabu} to 0.9\textwidth {| X[1] | X[1] | X[1] | X[1] | X[1] | X[1] | X[1] |}
-		\hline
-		\textbf{Wert} & \textbf{Bedrohung} & \textbf{Schwachstelle} & \textbf{Wahrscheinlichkeit} & \textbf{Schaden} & \textbf{Risiko} & \textbf{Maßnahme}\\
-		\hline 
-		Kucera, Adam &  & & & & &\\
-		\hline
-	\end{tabu}
+\caption{Für die Bedrohung Menschliches Versagen}
+\begin{tabu} to \linewidth {X[-1,l,m] X[-1,l,m] X[-1,l,m] X[-1,l,m] X[-1,l,m] }
+\toprule 
+\textbf{Schwachstelle} & \textbf{Wahrschein-\linebreak{}lichkeit} & \textbf{Schaden} & \textbf{Risiko} & \textbf{Maßnahme}\tabularnewline
+\midrule 
+Ausschalten von Sicherheitsmaßnahmen (aus böser Absicht oder Bequemlichkeit z.B. Türen offen lassen) & 3 & 3 & 9 & Überwachung/Schulung/Sicherheitsrichtlinien\tabularnewline
+Unsichere Passwörter & 4 & 4 & 16 & Schulung/\linebreak{}Sicherheits-\linebreak{}richtlinien\tabularnewline
+Social Engineering & 3 & 4 & 12 & gezielte Schulungen\tabularnewline
+\bottomrule
+\end{tabu}
 \end{table}
 
-Heutzutage sind sowohl die Industriespionage als auch Diebstähle deutlich gestiegen. 
-Eine gute Schulung der Mitarbeiter und ein sicherer Ort zum Schutz der Daten sind immer  wichtiger. 
-Die Schwachstellen der höchsten Risiken sind ein unsicheres Passwort-Account, Zweckentfremdung der Zugangsinformationen der Mitarbeiter, wichtige Daten und Akten in ungesicherten Orten speichern. Durch Abschaltung dieser Schwachstellen werden die Forschungsdaten, Produktionsdaten und Akten schwer gestohlen werden.
+Eine professionelle Schulung der Mitarbeiter kann Risiken vermeiden. Unsichere Passwörter von Mitarbeitern sind anfälliger für Angriffe von Außen. Durch Social Engineering können Dritte Personen an firmeninterne Daten gelangen, die zweckentfremdet werden können.
 
 \begin{table}[H]
-	\sffamily
-	\caption{Server-Netzlabor-PC-Pool vs. Bedrohungen}
-	\tabulinesep = 1mm %bringt die Reihen etwas weiter auseinander, angenehmer zu lesen
-	\centering
-		\begin{tabu} to 0.9\textwidth {| X[1] | X[1] | X[1] | X[1] | X[1] | X[1] | X[1] |}
-		\hline
-		\textbf{Wert} & \textbf{Bedrohung} & \textbf{Schwachstelle} & \textbf{Wahrscheinlichkeit} & \textbf{Schaden} & \textbf{Risiko} & \textbf{Maßnahme}\\
-		\hline 
-		Kucera, Adam &  & & & & &\\
-		\hline
-	\end{tabu}
+\caption{Für die Bedrohung Industriespionage}
+\begin{tabu} to \linewidth {X[-1,l,m] X[-1,l,m] X[-1,l,m] X[-1,l,m] X[-1,l,m] }
+\toprule 
+\textbf{Schwachstelle} & \textbf{Wahrschein-\linebreak{}lichkeit} & \textbf{Schaden} & \textbf{Risiko} & \textbf{Maßnahme}\tabularnewline
+\midrule 
+Mitarbeiter verkaufen interne Daten aufgrund schlechter Bezahlung & 2 & 4 & 8 & Kündigung
+Strafanzeige evtl. Haftstrafe
+\tabularnewline
+Daten werden gestohlen aufgrund unsicherer Passwörter & 3 & 5 & 15 & Schulung/\linebreak{}Sicherheits-\linebreak{}richtlinien\tabularnewline
+Physischer Diebstahl durch ungesicherte Büros & 3 & 5 & 15 & sicherer Ort für Unterlagen\tabularnewline
+\bottomrule
+\end{tabu}
 \end{table}
 
-Naturkatastrophen: Hochwasser, Hurrikans und Feuerbrände sind auch Bedrohungen für die Server, Netzlabore, PC-Pools und die Infrastruktur. Obwohl die Wahrscheinlichkeit das eine Katastrophe eintritt, nicht enorm hoch ist. 
-Die Ortsanalyse für die Gründung und Niederlassung eines Unternehmens, ist ein entscheidender Faktor. In den Beispielen dieses Projektes sind die Orte Görlitz (Polen als Nachbarland) und der östliche Teil Chinas (Experten des Kopierens) aufgeführt.
+Heutzutage sind sowohl die Industriespionage als auch Diebstähle deutlich gestiegen. Eine gute Schulung der Mitarbeiter und ein sicherer Ort zum Schutz der Daten sind immer wichtiger. Die Schwachstellen der höchsten Risiken sind unsichere Passwörter, Zweckentfremdung der Zugangsinformationen der Mitarbeiter, sowie die unsichere Lagerung wichtiger Daten und Akten.
+
+\begin{table}[H]
+\caption{Für die Bedrohung höhere Gewalt}
+\begin{tabu} to \linewidth {X[-1,l,m] X[-1,l,m] X[-1,l,m] X[-1,l,m] X[-1,l,m] }
+\toprule 
+\textbf{Schwachstelle} & \textbf{Wahrschein-\linebreak{}lichkeit} & \textbf{Schaden} & \textbf{Risiko} & \textbf{Maßnahme}\tabularnewline
+\midrule 
+Feuer durch schlechten Brandschutz & 1 & 5 & 5 & Brandschutz-\linebreak{}anlagen\tabularnewline
+Wasserschäden durch z.B. Hochwasser & 1 & 2 & 2 & entsprechende Schutzmaßnahmen\tabularnewline
+Diebstahl & 2 & 4 & 8 & Überwachung/Schutzrichtlinien\tabularnewline
+\bottomrule
+\end{tabu}
+\end{table}
+
+Naturkatastrophen: Hochwasser, Hurrikans und Feuerbrände sind auch Bedrohungen für die Server, Netzlabore, PC-Pools und die Infrastruktur. Obwohl die Wahrscheinlichkeit das eine Katastrophe eintritt, nicht enorm hoch ist. Die Ortsanalyse für die Gründung und Niederlassung eines Unternehmens, ist ein entscheidender Faktor. In den Beispielen dieses Projektes sind die Orte Görlitz (Polen als Nachbarland) und der östliche Teil Chinas (Industriespionage) aufgeführt.

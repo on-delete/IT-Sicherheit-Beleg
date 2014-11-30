@@ -5,6 +5,8 @@
 *.synctex.gz
 *.toc
 *.log
+*.lot
+*.lof
 *.blg
 *.tcp
 *.tps
