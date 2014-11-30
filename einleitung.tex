@@ -2,45 +2,71 @@
 Im Folgenden soll ein Überblick über den Inhalt dieses Belegs gegeben werden. Weiterhin wird der Ablauf des Projektes skizziert und die Aufteilung der Arbeit in Gruppen erläutert.
 
 \subsection{Bedrohungs- und Risikoanalyse}
-Jüngste Ereignisse wie der Sony-Skandal von 2011, bei dem es unbekannten Angreifern gelang, in das Online-Netzwerk PlayStation Network (PSN) einzudringen und Daten von rund 77 Millionen Nutzern zu stehlen, zeigen, dass auch große Unternehmen bei der Umsetzung eines umfassenden und angemessenen Sicherheitskonzeptes nicht alle möglichen Bedrohungen bedacht zu haben scheinen. Sony wurde daraufhin zu einer Strafzahlung von 300.000 Euro verurteilt. Somit entstand dem Unternehmen durch diesen Vorfall nicht nur ein wirtschaftlicher Schaden, auch der Imageverlust ist ein nicht zu ignorierender Faktor in dieser Angelegenheit, besonders durch die Tatsache, dass dieser Angriff hätte verhindert werden können. 
+Jüngste Ereignisse wie der Sony-Skandal von 2011, bei dem es unbekannten Angreifern gelang, in das Online-Netzwerk PlayStation Network (PSN) einzudringen und Daten von rund 77 Millionen Nutzern zu stehlen, zeigen, dass auch große Unternehmen bei der Umsetzung eines umfassenden und angemessenen Sicherheitskonzeptes nicht alle möglichen Bedrohungen bedacht zu haben scheinen. Sony wurde daraufhin zu einer Strafzahlung von 300.000 Euro verurteilt\cite{pcwelt:Bergert}. Somit entstand dem Unternehmen durch diesen Vorfall nicht nur ein wirtschaftlicher Schaden, auch der Imageverlust ist ein nicht zu ignorierender Faktor in dieser Angelegenheit, besonders durch die Tatsache, dass dieser Angriff hätte verhindert werden können. 
 \\
 \\
 Gerade durch die immense Ausbreitung des Internets und der zunehmenden Menge an Daten, die in digitaler Form verschickt oder gespeichert werden, sind auch kleinere Unternehmen gezwungen, sich vor bestehenden Risiken zu informieren und gegebenenfalls Gegenmaßnahmen einzuleiten. Das Risikomanagement bildet dabei die Grundlage, um ein umfassendes Sicherheitskonzept, angepasst an die jeweilige Situation des betrachteten Objektes, zu erstellen und einzuführen. Die Bedrohungs- und Risikoanalyse ist ein wichtiger Baustein des Risikomanagements und dient hauptsächlich zur Identifizierung und Bewertung der möglichen Gefährdungen. Solche können zum Beispiel aktive Angriffe sein, bei denen der Angreifer Sicherheitslücken ausnutzt oder Passwörter per Brut-Force Attacken ausspäht. Aber auch Datenverlust durch höhere Gewalt wie Brand oder Hochwasser können die Integrität des bestehenden Systems gefährden. Menschliches Versagen oder ungeschulte Mitarbeiter sind ebenfalls wichtige Faktoren, die betrachtet und eingeschätzt werden müssen.
 
 \subsection{Projektaufgabe}
-Im Rahmen des Moduls "IT-Sicherheitsmanagement" im Wintersemester 2014/15 an der Hochschule Zittau/Görlitz Fachbereich Informatik wurde ein Projekt mit dem Inhalt einer solchen Bedrohungs- und Risikoanalyse durchgeführt. 
-
-\subsection{Ablauf}
+Im Rahmen des Moduls "`IT-Sicherheitsmanagement"' im Wintersemester 2014/15 an der Hochschule Zittau/Görlitz Fachbereich Informatik wurde ein Projekt mit dem Inhalt einer solchen Bedrohungs- und Risikoanalyse durchgeführt. Die konkrete Aufgabenstellung bestand zum einen aus der Bedrohungs- und Risikoanalyse zweier verschiedener Fallbeispiele mit Hilfe eines entsprechenden Tools sowie die Untersuchung der UML als geeignete Alternative. Der Schwerpunkt bei der Auswahl des Tools sollte sich auf Programme mit einer Visualisierung richten. Die Fallbeispiele zur Untersuchung waren einerseits mit dem Fachbereich Informatik der Hochschule Zittau/Görlitz bereits vorgegeben, zum anderen sollte sich die Gruppe ein eigenes Beispiel ausdenken.
 
 \subsection{Vorgehensweise}
+Das Projekt begann mit einem Kick-Off-Meating, bei dem die Aufgaben verteilt und das erdachte Fallbeispiel zusammengetragen wurde. Anschließend fand eine Evaluation von verschiedenen Tools statt, die anhand von Kriterien bewertet wurden und letztendlich ein Tool ausgewählt wurde, was für die Analyse genutzt werden sollte. Daran schloss sich die Analyse für die zwei Fallbeispiele an, bei denen die Bedrohungen und Risiken anhand von MisUse Cases und AttackTrees visualisiert und mittels Schadenstabellen bewertet wurden. Parallel dazu wurde ermittelt, ob die UML als eine adäquate Beschreibungsform für die Bedrohungs- und Risikoanalyse genutzt werden kann.
 
 \subsection{Aufteilung}
+Die Aufgaben innerhalb der Gruppe wurden wie folgt aufgeteilt:
+
 \begin{table}[H]
 	\sffamily
 	\caption{Aufgabenverteilung}
 	\tabulinesep = 1mm %bringt die Reihen etwas weiter auseinander, angenehmer zu lesen
 	\centering
-		\begin{tabu} to 0.9\textwidth {| X[1.5] | X[3] |}
+		\begin{tabu} to 0.9\textwidth { X[1.5]  X[3] }
 		\hline
 		\textbf{Name} & \textbf{Aufgabe}\\
 		\hline 
-		Kucera, Adam & \\
-		\hline
-		Krause, Andre & Kapitel Einleitung\\
-		\hline
-		Leuschner, Jens & \\
-		\hline
-		Mack, Tobias & \\
-		\hline
-		Michel-Suarez, Maria Belen & \\
-		\hline
+		Kucera, Adam & Attack-Tree: "`böswilliger Mensch"'\\
+
+		Krause, Andre & Einleitung\\
+
+		Leuschner, Jens & Security Modeling Software\\
+
+		Mack, Tobias & AttackTrees\\
+
+		Michel-Suarez, Maria Belen & Schadensberechnung\\
+
 		Müssig, Daniel & \\
-		\hline
-		Riedel, Robert & \\
-		\hline
-		Wollstein, Romano & \\
-		\hline
+
+		Riedel, Robert & Vorgehen bei der Risikoanalyse\\
+
+		Wollstein, Romano & Security Modeling Software\\
+
 		Zoeke, Robert & Misuse Cases \& Evaluation von Seamonster\\
-		\hline
+
 	\end{tabu}
 \end{table}
+
+\subsection{Definition der Fallbeispiele}
+Für die Analyse wurden zwei Fallbeispiele ausgewählt, an denen die Betrachtung exemplarisch durchgeführt werden sollte. Für das Fallbeispiel I sollte ein eigenes mittelständisches Unternehmen erdacht werden, das nicht unbedingt zu dem Bereich Informatik gehören sollte. Die Eckdaten für dieses Unternehmen sind folgende:
+
+\begin{itemize}
+\item Name: AutoVit
+\item Bereich: Automobil-Branche
+\item Produziert: Fahrassistenz-Systeme / Produktion in China
+\item Standorte: Stuttgart (Hauptsitz, Entwicklung) / China
+\item Mitarbeiter: 400 (250 / 150)
+\item Aussendienst: 50
+\item Umsatz: 50.000 verkaufte Einheiten pro Jahr a 1000 Euro
+\end{itemize}
+
+Das zweite Fallbeispiel war mit dem Fachbereich Informatik der Hochschule Zittau/Görlitz bereits vorgegeben. Dabei werden folgende Eckdaten betrachtet:
+
+\begin{itemize}
+\item Name: Fachbereich Informatik der HSZG
+\item Bereich: Bildung / Forschung
+\item Produziert: Hauptsächlich Forschung
+\item Standorte: Görlitz
+\item Mitarbeiter: 10 Professoren + 10 Mitarbeiter + HiWis + Studenten
+\item Aussendienst: reisende Professoren
+\end{itemize}
+

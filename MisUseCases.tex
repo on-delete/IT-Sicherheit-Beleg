@@ -1,32 +1,32 @@
 \section{Misuse Cases}
 
-Use Cases spielen nicht nur bei der Softwareentwicklung eine bedeutende Rolle beim requirements engineering. Es ist jedoch in der UML 2 Spezifikation nicht möglich Sicherheitsanalysen mit Use Cases durchzuführen \cite{sindre2005eliciting}. 
-In \cite{sindre2005eliciting} wird eine Erweiterung von Use Cases vorgestellt, die es auch ermöglicht Missbrauch darzustellen. Während Use Cases etwas von Wert für den Systembesitzer und Stakeholder schaffen, stellen Misuse Cases einen Schaden am System und Werten dar.
-Misuse Case und Misuser werden dabei wie folgt definiert.
+Use Cases spielen nicht nur bei der Softwareentwicklung eine bedeutende Rolle beim Requirements Engineering. Es ist jedoch in der UML 2 Spezifikation nicht möglich, Sicherheitsanalysen mit Use Cases durchzuführen \cite{sindre2005eliciting}. 
+In \cite{sindre2005eliciting} wird eine Erweiterung von Use Cases vorgestellt, die es auch ermöglicht, Missbrauch darzustellen. Während Use Cases etwas von Wert für den Systembesitzer und Stakeholder schaffen, stellen MisUse Cases einen Schaden am System und Werten dar.
+MisUse Case und MisUser werden dabei wie folgt definiert:
 \begin{quote}
-\textbf{Misuse Case} A sequence of actions, including variants, that a system or other entity can perform, interacting with misusers of the entity and causing harm to some stakeholder if the sequence is allowed to complete. \cite{sindre2005eliciting}
+\textbf{MisUse Case} A sequence of actions, including variants, that a system or other entity can perform, interacting with misusers of the entity and causing harm to some stakeholder if the sequence is allowed to complete. \cite{sindre2005eliciting}
 \end{quote}
 
 \begin{quote}
-\textbf{Misuser} An actor that initiates misuse cases, either intentionally or inadvertently. \cite{sindre2005eliciting}
+\textbf{MisUser} An actor that initiates misuse cases, either intentionally or inadvertently. \cite{sindre2005eliciting}
 \end{quote}
 
 Wie bei normalen Use Cases werden die Relationen \textit{include}, \textit{association}, \textit{extend} und \textit{generalize} verwendet.
 In \cite{sindre2005eliciting} werden folgende neue Relationen beschrieben:
 \begin{itemize}
-\item \textit{mitigate/prevent} Der Use Case ist eine Gegenmaßnahme gegen einen Misuse Case. Er reduziert also die Erfolgswahrscheinlichkeit.
-\item \textit{threaten} Ein Misuse Case kann einen Use Case gefährden und bei der Ausführung hindern.
+\item \textit{mitigate/prevent} Der Use Case ist eine Gegenmaßnahme gegen einen MisUse Case. Er reduziert also die Erfolgswahrscheinlichkeit.
+\item \textit{threaten} Ein MisUse Case kann einen Use Case gefährden und bei der Ausführung hindern.
 \end{itemize}
 
-Seamonster sieht außerdem Vulnerabilities, also Schwachstellen vor, die im Diagramm als graue Use Cases dargestellt werden. Diese Schwachstellen werden von einem Insider verursacht und können von einem Misuse Case mit der \textit{exploit} Relation ausgenutzt werden.
+Seamonster sieht außerdem Vulnerabilities, also Schwachstellen vor, die im Diagramm als graue Use Cases dargestellt werden. Diese Schwachstellen werden von einem Insider verursacht und können von einem MisUse Case mit der \textit{exploit} Relation ausgenutzt werden.
 
 \subsection{Textuelle Spezifikation}
-Misuse Cases lassen sich ähnlich regulärer Use Cases darstellen. Tabelle~\ref{tab:MisuseCaseTemplate} zeigt das hierfür verwendete Template. 
+MisUse Cases lassen sich ähnlich regulärer Use Cases darstellen. Tabelle~\ref{tab:MisuseCaseTemplate} zeigt das hierfür verwendete Template. 
 
 \begin{table}
 \scriptsize
 \centering
-\caption{Template für eine ausführliche Misuse Case Darstellung aus \cite{sindre2005eliciting}}
+\caption{Template für eine ausführliche MisUse Case Darstellung aus \cite{sindre2005eliciting}}
 \label{tab:MisuseCaseTemplate}
 \begin{tabular}{p{0.2\textwidth}p{0.8\textwidth}}
 \hline 
@@ -101,35 +101,35 @@ Terminology and explanations: & This field contains explanations of technical te
 \end{tabular} 
 \end{table}
 
-\subsection{Misuse Case Diagramme}
-Wie Use Case Diagramme, dienen Misuse Case Diagramme der Übersicht und Verbindung mehrerer Use Cases bzw. Misuse Cases. Fowler beschreibt das Use Case Diagramm in \cite{fowler2004uml} als nützlich aber nicht notwendig und empfiehlt sich auf die textuelle Darstellung zu konzentrieren. 
+\subsection{MisUse Case Diagramme}
+Wie Use Case Diagramme, dienen MisUse Case Diagramme der Übersicht und Verbindung mehrerer Use Cases bzw. MisUse Cases. Fowler beschreibt das Use Case Diagramm in \cite{fowler2004uml} als nützlich aber nicht notwendig und empfiehlt sich auf die textuelle Darstellung zu konzentrieren. 
 
 Seamonster unterstützt nur die Darstellung der Diagramme, nicht aber die textuelle Darstellung.
 
 \subsection{Anwendung auf die Fallbeispiele}
-Die folgenden Misuse Cases und Misuse Case Diagramme geben einen Überblick über die Sicherheitsanforderungen für beide Fallbeispiele. Da sich im Bereich der Misuse Cases für beide Fallbeispiele wenig Unterschiede ergeben haben, wird nicht zwischen FB I \& II differenziert.
+Die folgenden MisUse Cases und MisUse Case Diagramme geben einen Überblick über die Sicherheitsanforderungen für beide Fallbeispiele. Da sich im Bereich der MisUse Cases für beide Fallbeispiele wenig Unterschiede ergeben haben, wird nicht zwischen FB I \& II differenziert.
 
 \subsubsection{Diagramme}
 
 \begin{figure}[h]
 \includegraphics[scale=0.8]{images/Hardware.pdf} 
-\caption{Misuse Case Diagramm für den Missbrauch von Außendienstmitarbeiterhardware. Sicherheitsrichtlinien für Geräte (z.B. Verschlüsselung) können Angriffe erschweren oder verhindern.}
+\caption{MisUse Case Diagramm für den Missbrauch von Außendienstmitarbeiterhardware. Sicherheitsrichtlinien für Geräte (z.B. Verschlüsselung) können Angriffe erschweren oder verhindern.}
 \end{figure}
 
 \begin{figure}[h]
 \includegraphics[scale=0.8,angle=90]{images/MisUseCaseEinbruch.pdf} 
-\caption{Misuse Case Diagramm für ein Einbruchsszenario. Dem Angreifer werden verschiedene Sicherheitsmaßnahmen entgegengestellt, die einen Einbruch verhindern oder erschweren können}
+\caption{MisUse Case Diagramm für ein Einbruchsszenario. Dem Angreifer werden verschiedene Sicherheitsmaßnahmen entgegengestellt, die einen Einbruch verhindern oder erschweren können}
 \end{figure}
 
 
 \begin{figure}[h]
 \includegraphics[scale=0.8,angle=90]{images/Schulung.pdf} 
-\caption{Misuse Case Diagramm welches die Vorteile von Mitarbeiter Schulungen aufzeigt.}
+\caption{MisUse Case Diagramm welches die Vorteile von Mitarbeiter Schulungen aufzeigt.}
 \end{figure}
 
 \begin{figure}[h]
-\includegraphics[scale=0.8,angle=90]{images/Server.pdf} 
-\caption{Misuse Case Diagramm für mögliche Angriffsszenarien auf Serversysteme. Dabei werden nur Angriffe über das Netzwerk berücksichtigt und physischer Zugriff nach einem Einbruch außen vor gelassen.}
+\includegraphics[scale=0.75,angle=90]{images/Server.pdf} 
+\caption{MisUse Case Diagramm für mögliche Angriffsszenarien auf Serversysteme. Dabei werden nur Angriffe über das Netzwerk berücksichtigt und physischer Zugriff nach einem Einbruch außen vor gelassen.}
 \end{figure}
 
 \clearpage
@@ -138,7 +138,7 @@ Die folgenden Misuse Cases und Misuse Case Diagramme geben einen Überblick übe
 \begin{table}[h]
 \scriptsize
 \centering
-\caption{Misuse Case: Missbrauch von Außendienstmitarbeiterhardware}
+\caption{MisUse Case: Missbrauch von Außendienstmitarbeiterhardware}
 \label{tab:MisuseCaseTemplate}
 \begin{tabular}{p{0.2\textwidth}p{0.8\textwidth}}
 \hline 
@@ -169,7 +169,7 @@ Stakeholders and risks: & Sollten wichtige Forschungs- oder Produktionsdaten ges
 \begin{table}
 \scriptsize
 \centering
-\caption{Misuse Case für ein Einbruchsszenario}
+\caption{MisUse Case für ein Einbruchsszenario}
 \label{tab:MisuseCaseEinbruch}
 \begin{tabular}{p{0.2\textwidth}p{0.8\textwidth}}
 \hline 
@@ -213,7 +213,7 @@ Werden nur materielle Werte gestohlen, so entstehen nur die Wiederbeschaffungsko
 \begin{table}
 \scriptsize
 \centering
-\caption{Misuse Case der aufzeigt, was durch Schulungen verhindert werden kann}
+\caption{MisUse Case der aufzeigt, was durch Schulungen verhindert werden kann}
 \label{tab:MisuseCaseSchulung}
 \begin{tabular}{p{0.2\textwidth}p{0.8\textwidth}}
 \hline 
